@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import requests
 import datetime
 import slack
@@ -17,6 +17,10 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return 'Hello, World!'
+
+@app.route('/tem')
+def tem():
+    return render_template('form.html')
 
 @app.route('/get-board')
 def getBoard():
