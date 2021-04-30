@@ -26,6 +26,6 @@ telepot==12.7
 tornado==6.0.3
 twilio==6.35.1
 typing-extensions==3.7.4.1
-urllib3==1.25.7
+urllib3==1.25.8
 Werkzeug==0.16.0
 yarl==1.4.2
